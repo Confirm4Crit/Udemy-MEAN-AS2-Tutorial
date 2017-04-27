@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 @Component({
     selector: 'app-message-input',
     templateUrl: './message-input.component.html'
 })
 
-export class MessageInputComponent{
-    onSave(value: string)
-    {
+export class MessageInputComponent {
+    onSave(value: string) {
         console.log(new Date());
     }
 
