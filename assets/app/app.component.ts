@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
     templateUrl: './app.component.html'
 })
 export class AppComponent {
-    message: Message = new Message('Some message', 'Miles');
+    messages: Message[] = [new Message('Some message', 'Miles'),
+     new Message('Some message2', 'Miles'),
+     new Message('Some message3', 'Miles')];
 }
