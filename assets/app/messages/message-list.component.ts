@@ -12,8 +12,7 @@ import {Component, OnInit} from '@angular/core';
                      *ngFor="let message of messages">
         </app-message>
 
-    `,
-    providers: [MessageService]
+    `
 })
 export class MessageListComponent implements OnInit {
 
