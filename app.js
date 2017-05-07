@@ -7,11 +7,9 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 //Added for mongoose
 var appRoutes = require('./routes/app');
-var messageRoutes = require('./routes/messages');
-//var userRoutes = require('./routes/app');
 
 var app = express();
-mongoose.connect('localhost:27017/node-angular-udemy');
+mongoose.connect('localhost:27017/node-angular-udemy')
 //connecting to local DB
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,7 +30,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use('/message', messageRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler

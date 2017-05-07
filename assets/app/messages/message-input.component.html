@@ -1,6 +1,5 @@
 <div class="col-md-8 col-md-offset-2">
-    <!-- Add ngNativeValidate, Angular disables HTML5 validator by default-->
-    <form (ngSubmit)="onSubmit(f)" #f="ngForm" ngNativeValidate>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
         <div class="form-group">
             <label for="content">Content</label>
             <input
@@ -11,7 +10,6 @@
                     name="content"
                     required>
         </div>
-        <!-- Or [disabled]="!f.valid" on button if wanting to use angular validation-->
         <button class="btn btn-primary" type="submit">Save</button>
     </form>
 </div>
