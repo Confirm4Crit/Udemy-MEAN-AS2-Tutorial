@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var mySchema = new Schema({
     content: {type: String, required: true},
-    user:  {type: Schema.Types.ObjectId, required: true,ref: 'Message'}
+    user:  {type: Schema.Types.ObjectId,ref: 'Message'}
 });
 
 module.exports = mongoose.model('Message', mySchema);
