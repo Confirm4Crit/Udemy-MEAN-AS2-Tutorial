@@ -1,5 +1,6 @@
 <div class="col-md-8 col-md-offset-2">
-    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <!-- Add ngNativeValidate, Angular disables HTML5 validator by default-->
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" ngNativeValidate>
         <div class="form-group">
             <label for="content">Content</label>
             <input
